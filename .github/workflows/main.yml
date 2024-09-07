@@ -3,7 +3,7 @@ name: Build and Deploy Website
 on:
   push:
     branches:
-      - main  # Or any branch where you push your index.html
+      - main  # Make sure this matches your branch name
 
 jobs:
   build:
@@ -19,8 +19,8 @@ jobs:
       - name: Deploy Website
         run: |
           echo "Building and deploying your site..."
-          # Add any build steps here if needed
-          # For example, if you're using a static site generator or just deploying the index.html
+          # Add any specific build commands here if needed
+          # For example, if using a static site generator, add its build commands
           echo "Site deployed!"
 
       - name: End Timer
