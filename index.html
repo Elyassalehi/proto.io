@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Proto.io Embed</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
     </style>
-    <!-- Hotjar Tracking Code for https://elyassalehi.github.io/proto.io/ -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:5126574,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
-    <!-- Proto.io Embed Code for Home Page -->
-    <div class="protoio-embed-prototype" data-code="ANT7S5" data-show-sidebuttons="0" style="width: 100%; height: 800px;"></div>
+    <div class="container">
+        <h1>Embedded Proto.io Prototype</h1>
+        <div class="protoio-embed-prototype" data-code="ANT7S5" data-show-sidebuttons="0" style="width: 100%; height: 800px;"></div>
+    </div>
+    
     <script async src="https://static.proto.io/api/widget-embed.js"></script>
 </body>
 </html>
