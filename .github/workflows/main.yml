@@ -1,0 +1,27 @@
+name: Build and Deploy Website
+
+on:
+  push:
+    branches:
+      - main  # Or any branch where you push your index.html
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Start Timer
+        run: echo "Start time: $(date)"
+
+      - name: Deploy Website
+        run: |
+          echo "Building and deploying your site..."
+          # Add any build steps here if needed
+          # For example, if you're using a static site generator or just deploying the index.html
+          echo "Site deployed!"
+
+      - name: End Timer
+        run: echo "End time: $(date)"
